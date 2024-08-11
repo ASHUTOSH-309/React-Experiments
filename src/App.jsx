@@ -1,19 +1,19 @@
 
+import { useState } from 'react';
 import Header from './components/Header'
+import { HeaderWithButton } from './components/HeaderWithButton';
 
 function App() {
-const [title,setTitle]=useState(" ");
 
-
-function changeTitle(){
-  setTitle(toString(Math.random()))
-}
 
   return (
     <div>
-      <button  onClick={changeTitle}>Click me to change the title</button>
-      <Header title={title} />
+    
+      <HeaderWithButton />
       <Header title={"Title 2"} />
+      <Header title={"Title 3"} />
+      <Header title={"Title 4"} />
+      <Header title={"Title 5"} />
     </div>
   )
 }
