@@ -1,8 +1,8 @@
-function CardWrapper({ innerComponent }) {
+function CardWrapper({ InnerComponent }) {
 
     return <div style={{ border: "2px solid red" }}>
 
-        <innerComponent />
+        <InnerComponent />
 
 
     </div>
