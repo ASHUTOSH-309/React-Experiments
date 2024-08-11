@@ -5,11 +5,15 @@ import { HeaderWithButton } from './components/HeaderWithButton';
 
 function App() {
 
+  const [title,setTitle]=useState("Parent")
+  function updateTitle(){
+    setTitle(Math.random()+"")
+  }
 
   return (
     <div>
-    
-      <HeaderWithButton />
+      <button onClick={updateTitle}>Update First Title</button>
+      <Header title={title} />
       <Header title={"Title 2"} />
       <Header title={"Title 3"} />
       <Header title={"Title 4"} />
